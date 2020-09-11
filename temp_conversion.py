@@ -18,10 +18,22 @@ def far_to_cel(f_deg):
     return f"{f_deg} degrees F is {c:.1f} degrees C"
 
 
-cels = float(input("enter a temp in degrees C: "))
-cel_temp = cel_to_far(cels)
-print(cel_temp)
-print()
-far = float(input("enter a temp in degrees F: "))
-far_temp = far_to_cel(far)
-print(far_temp)
+def start_program():
+    start = True
+    while start:
+        try:
+            cels = float(input("enter a temp in degrees C: "))
+            cel_temp = cel_to_far(cels)
+            print(cel_temp)
+            print()
+            far = float(input("enter a temp in degrees F: "))
+            far_temp = far_to_cel(far)
+            print(far_temp)
+            start = False
+                
+        except ValueError:
+            print("you must enter a numeric value")
+            
+    
+    
+start_program()
