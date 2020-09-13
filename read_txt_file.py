@@ -1,10 +1,3 @@
-# with open("some_text.txt", "r") as f:
-#     file = f.read()
-#     print(file)
-    
-# print("The file has been closed")
-
-
 def read_txt_file():
     start = True
     exit_program = "exit"
